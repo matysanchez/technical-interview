@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
+
+.logo_title {
+  display: flex;
+  flex-direction: row;
+}
+
+.article {
+  width: 100%;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #DDDDDD;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 30px 10px 30px;
+  border-bottom: 1px solid #DDDDDD;
+
+  .rigth_area {
+    flex: 1;
+  }
+
+  .image_container {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 107px;
+    height: 107px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D8D8D8;
+    border-radius: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .description {
+    padding: 5px 15px;
+    display: flex;
+    flex-direction: column;
+
+    .location {
+      padding-top: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+
+      label {
+        font: normal normal normal 18px/24px Nunito Sans;
+        letter-spacing: 0px;
+        color: #063347;
+        opacity: 1;
+      }
+
+      img {
+        margin: 0 10px;
+      }
+
+    }
+
+    h2 {
+      text-align: left;
+      font: normal normal bold 25px/34px Poppins;
+      letter-spacing: 0px;
+      color: #063347;
+      font-size: 25px;
+    }
+
+  }
+
+
+  .riasec {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    .riasec_button {
+      background: #F2F2F2 0% 0% no-repeat padding-box;
+      border-radius: 8px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 13px;
+      margin-right: 10px;
+
+      label {
+        height: 24px;
+        text-align: left;
+        font-weight: bold;
+        font-family: Nunito Sans;
+        font-size: 18px;
+        letter-spacing: 0px;
+        color: #013145;
+        margin-left: 10px;
+
+      }
+
+    }
+  }
+
+
+  .buttons_area {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 220px;
+
+    .like {
+      padding: 0 5px;
+      padding-bottom: 15px;
+    }
+
+
+    .job_button {
+      padding: 10px;
+      background: #C59ED8 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      height: 37px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: left;
+      font: normal normal normal 18px/24px Nunito Sans;
+      letter-spacing: 0px;
+      color: #013145;
+      cursor: pointer;
+      margin-bottom: 15px;
+      position: relative;
+
+      label {
+        cursor: pointer;
+        background-image: url('/assets/dash.svg');
+        background-repeat: no-repeat;
+        background-position: bottom;
+      }
+
+      span {
+        visibility: hidden;
+        top: 44px;
+        position: absolute;
+        width: 270px;
+        font: normal normal normal 14px/16px Nunito Sans;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 4px #00000012;
+        border: 1px solid #F0F0F0;
+        border-radius: 20px;
+        padding: 15px;
+      }
+
+      &:hover span {
+        visibility: visible;
+      }
+
+    }
+
+
+
+    .job_salary {
+      font: normal normal 900 31px/42px Nunito Sans;
+      letter-spacing: 0px;
+      color: #C59ED8;
+    }
+  }
+}
+
+.footer {
+  padding: 10px 30px 25px 30px;
+
+  h4 {
+    font: normal normal 800 14px Nunito Sans;
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+
+  p {
+    font: normal normal normal 18px/24px Nunito Sans;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+}
